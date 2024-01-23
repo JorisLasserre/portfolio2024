@@ -8,6 +8,7 @@
       href="https://api.fontshare.com/v2/css?f[]=switzer@600,800,100,700,400,200,300,500&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://kit.fontawesome.com/5ade61bb68.js"
       crossorigin="anonymous"
@@ -29,10 +30,13 @@
 
     <main>
       <h1 id="homeTitle">
-        <span class="span1"> ODOMO </span>
+        <span class="span1">Odomo </span>
       </h1>
       <div class="subTitle">
-        <p>Station météorologique</p>
+        <p>
+          Le projet Odomo consistait à coder le programme d'une petite centrale
+          domotique puis d'afficher les données dans la console.
+        </p>
       </div>
 
       <div class="project-container">
@@ -45,13 +49,13 @@
               ></i
               >Date
             </div>
-            <div class="corps">Juin 2023</div>
+            <div class="corps">Octobre 2022</div>
           </div>
           <div id="team-Div">
             <div class="entete">
               <i style="margin-right: 10px" class="fa-solid fa-user"></i>Équipe
             </div>
-            <div class="corps">5 Personnes</div>
+            <div class="corps">Seul</div>
           </div>
           <div id="language-div">
             <div class="entete">
@@ -64,7 +68,7 @@
 
         <img
           class="picture1"
-          src="pictures/modele.jpg"
+          src="pictures/odomo_screen2.png"
           alt="odomo"
           width="1200px"
           height="600px"
@@ -73,25 +77,28 @@
         <div class="text-content">
           <h2 class="desc-title">Description</h2>
           <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Temporibus, commodi aliquid! Repellat rerum beatae, dignissimos vel
-            architecto distinctio facilis, id repudiandae dolore maxime,
-            blanditiis nulla ipsa molestias aut consectetur aperiam?
+            Ce projet était découpé en plusieurs parties qui correspondaient à
+            divers fonctionnalités de la station (Météo, histogramme, chauffage,
+            jardin). La difficulté était croissante, cela a commencé par de
+            simples modifications de fonctions jusqu'à la création d'une classe
+            complète. Tout au long du projet j'ai appris à travailler sur du
+            code fourni et des matrices, ainsi qu'à prendre en main le système
+            de classes.
           </p>
         </div>
 
         <div id="img-container">
           <img
             class="picture2"
-            src="pictures/modele.jpg"
+            src="pictures/odomo_screen1.png"
             alt="odomo2"
             width="600"
             height="300"
           />
 
           <img
-            class="picture2"
-            src="pictures/modele.jpg"
+            class="picture3"
+            src="pictures/odomo_screen1.png"
             alt="odomo3"
             width="600"
             height="300"
@@ -105,6 +112,9 @@
           ;
           >Voir tous les projets ...</a
         >
+      </div>
+      <div id="imageModal" class="modal">
+        <img class="modal-content" id="zoomedImg" />
       </div>
 
       <footer>
@@ -135,4 +145,5 @@
       </footer>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
