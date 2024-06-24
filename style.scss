@@ -436,7 +436,68 @@ p:visited, .all-project-box:visited{
    font-weight: 900;
 }
 
+/*CONTACT*/
 
+.information-container{
+    display: flex;
+    align-items: center;
+    padding: 2em calc(1.5rem + 6px) 8rem
+}
+
+.left-information-container{
+    width: 40%;
+    justify-content: center;
+    display: flex;
+}
+.left-information-container img{
+    width: 60%;
+    
+    border-radius: 200px 200px 0 0;    
+}
+
+.right-information-container{
+    width: 60%;
+}
+
+.important-contact p{
+    padding: 1rem 0 1rem;
+    
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 700;
+    font-family: "acorn", sans-serif;
+    color: #8FDCC2;
+    margin-bottom: 0.1rem;
+}
+
+.me-contacter{
+    margin: 1em 0;
+}
+
+.contact-link a:hover{
+    color: $title-color;
+}
+@media screen and (max-width: 952px) {
+    .information-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-information-container{
+        width: 100%;
+        justify-content: center;
+    }
+    .left-information-container img{
+        width: 40%;
+        margin-bottom: 2em;
+        justify-content: center;
+    }
+
+    .right-information-container{
+        width: 100%;
+    }
+
+}
 
 /*FOOTER*/
 
@@ -478,6 +539,7 @@ footer div>h4{
 #test-footer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: $title-color;
     font-weight: 500;
 }
